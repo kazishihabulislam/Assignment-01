@@ -110,8 +110,7 @@ nav ul a {
   border-radius: 16px;
 }
 .container {
-  margin: 0 10px;
-  padding: 48px;
+  max-width: 1140px;
 }
 .project {
   background: linear-gradient(
@@ -247,7 +246,7 @@ nav ul a {
 /* Target Section Style is Here  */
 #dreams-journey {
   width: 80%;
-  margin: 0px 150px;
+  margin: 80px auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -297,6 +296,18 @@ nav ul a {
   filter: brightness(100%);
 }
 /* The next target section style is here  */
+#unique-card-container {
+  background: rgba(13, 19, 33, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin: 80px auto;
+  padding-bottom: 80px;
+  border-radius: 16px;
+}
 .card-wrapper {
   position: static;
   width: 892.49px;
@@ -306,12 +317,6 @@ nav ul a {
   align-items: flex-start;
   gap: 24;
   padding: 0px;
-
-  /* Inside Auto Layout */
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
   margin: 16px 0px;
 }
 .target-description {
@@ -355,9 +360,111 @@ nav ul a {
   max-width: 1140px;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
-  gap: 48px;
+  gap: 38px;
   padding: 40px;
   margin: 24px 0px;
 }
+.project-image img {
+  width: 80%;
+}
+
+/* Support Section Style is here */
+#support {
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2),
+    url(Email);
+  background-image: url("../images/handshake.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 80%;
+  margin: 80px auto;
+  border-radius: 16px;
+}
+.support-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1440px;
+  width: 80%;
+  margin: 0px 145px;
+  padding: 28px 0;
+}
+.support-title {
+  color: rgb(255, 255, 255);
+  margin: 16px 0px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+.support-description {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  opacity: 0.8;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-textarea {
+  text-align: center;
+  max-width: 548px;
+  margin: 0px 16px;
+  padding: 19px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 57px;
+  border: 1px solid rgba(13, 19, 33, 0.15);
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+.form-submit {
+  width: 120px;
+  height: 57px;
+  font-size: 17px;
+  margin: 0px 10px;
+  padding: 17px 20px;
+  border-radius: 8px;
+  background: rgb(255, 255, 255);
+}
+.form-submit:hover{ 
+    background-color: rgba(7, 9, 14, 0.76);
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+}
+/* Support Section Style is End */
+
+/* footer section style is here */
+#footer {
+  width: 100%;
+  padding: 32px 150px;
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.03);
+}
+.footer-title {
+  color: rgb(13, 19, 33);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
+  opacity: 0.8;
+}
+.footer-section {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-social-media a {
+  text-decoration: none;
+  margin: 0px 10px;
+}
+/* footer section style is end */
